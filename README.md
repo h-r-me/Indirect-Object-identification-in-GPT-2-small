@@ -1,4 +1,3 @@
-````markdown
 # Causal Analysis of Attention Heads in GPT-2 Small
 
 Mechanistic interpretability study of **Indirect Object Identification (IOI)** in GPT-2 Small using **activation patching** and **attention-head ablation**.
