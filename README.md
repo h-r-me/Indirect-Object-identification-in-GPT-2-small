@@ -95,44 +95,7 @@ The clean and corrupted prompts reverse the roles of the two names, providing a 
 
 ---
 
-## Repository Structure
 
-```text
-ioi-causal-analysis/
-│
-├── notebooks/
-│   ├── 01_dataset_generation.ipynb
-│   ├── 02_activation_patching.ipynb
-│   └── 03_head_ablation.ipynb
-│
-├── figures/
-│   ├── layer_patching_mean.png
-│   ├── head_patching_heatmap.png
-│   └── patch_vs_ablation.png
-│
-├── results/
-│   ├── residual_patching.csv
-│   ├── head_patching.csv
-│   └── head_ablation.csv
-│
-├── report/
-│   └── report.pdf
-│
-├── requirements.txt
-└── README.md
-```
-
----
-
-## Installation
-
-```bash
-pip install torch transformer-lens transformers pandas numpy matplotlib seaborn tqdm
-```
-
-No training or fine-tuning is required.
-
----
 
 ## Main Takeaway
 
@@ -140,7 +103,7 @@ The experiments provide evidence that IOI behavior in GPT-2 Small is strongly co
 
 The current results identify candidate components, but do not yet reconstruct the complete IOI circuit.
 
-The full methodology, analysis, and discussion are available in the [project report](report/report.pdf).
+The full methodology and analysis, are available in the [project report](report/report.pdf).
 
 ---
 
