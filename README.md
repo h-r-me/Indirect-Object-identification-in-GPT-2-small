@@ -131,11 +131,7 @@ corrupted_incorrect = A
 All experiments use the same clean-vs-corrupted logit axis:
 
 [
-LD =
-\text{logit(clean answer)}
---------------------------
-
-\text{logit(corrupted answer)}
+LD ={logit(A)}-{logit(B)}
 ]
 
 Therefore:
