@@ -129,10 +129,9 @@ corrupted_incorrect = A
 ## Behavioral Metric
 
 All experiments use the same clean-vs-corrupted logit axis:
-
-[
+```text
 LD ={logit(A)}-{logit(B)}
-]
+```
 
 Therefore:
 
@@ -161,14 +160,14 @@ Corrupted prompt → Transformer → Prediction
 
 The normalized patching score is:
 
-[
+```math
 P =
 \frac{
 LD_{patched}-LD_{corrupt}
 }{
 LD_{clean}-LD_{corrupt}
 }
-]
+```
 
 Interpretation:
 
