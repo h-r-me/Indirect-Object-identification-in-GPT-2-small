@@ -1,4 +1,3 @@
-````markdown
 # Causal Analysis of Attention Heads in GPT-2 Small
 
 Mechanistic interpretability study of **Indirect Object Identification (IOI)** in GPT-2 Small using **activation patching** and **attention-head ablation**.
@@ -227,105 +226,8 @@ Ablation should therefore not be interpreted as a simple "importance score"; its
 
 ## Repository Structure
 
-```text
-ioi-causal-analysis/
-│
-├── notebooks/
-│   ├── 01_dataset_generation.ipynb
-│   ├── 02_activation_patching.ipynb
-│   └── 03_head_ablation.ipynb
-│
-├── figures/
-│   ├── layer_patching_mean.png
-│   ├── head_patching_heatmap.png
-│   └── patch_vs_ablation.png
-│
-├── results/
-│   ├── residual_patching.csv
-│   ├── head_patching.csv
-│   └── head_ablation.csv
-│
-├── report/
-│   └── report.pdf
-│
-├── requirements.txt
-└── README.md
-```
-
 ---
 
-## Installation
-
-```bash
-pip install torch transformer-lens transformers pandas numpy matplotlib seaborn tqdm
-```
-
-The experiments can run on a free notebook GPU and do not require model training.
-
----
-
-## Running the Project
-
-### 1. Generate the dataset
-
-Open:
-
-```text
-notebooks/01_dataset_generation.ipynb
-```
-
-This creates the clean/corrupted IOI examples and validates GPT-2 tokenization and model behavior.
-
-### 2. Run residual-stream patching
-
-Open:
-
-```text
-notebooks/02_activation_patching.ipynb
-```
-
-This performs:
-
-* clean/corrupted behavioral evaluation
-* residual-stream patching
-* layer-wise analysis
-* attention-head patching
-
-### 3. Run head ablation
-
-Open:
-
-```text
-notebooks/03_head_ablation.ipynb
-```
-
-This evaluates selected attention heads by zeroing their outputs and measuring the change in the IOI logit difference.
-
----
-
-## Key Figures
-
-The main results are:
-
-### Layer localization
-
-`figures/layer_patching_mean.png`
-
-Shows the sharp increase in causal patching effects in Layers 8–11.
-
-### Head localization
-
-`figures/head_patching_heatmap.png`
-
-Shows which Layer 10 and Layer 11 attention heads have the strongest patching effects.
-
-### Patching vs. ablation
-
-`figures/patch_vs_ablation.png`
-
-Compares two different causal interventions and illustrates that they do not necessarily produce identical head rankings.
-
----
 
 ## Interpretation
 
