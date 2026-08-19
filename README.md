@@ -103,8 +103,7 @@ The experiments provide evidence that IOI behavior in GPT-2 Small is strongly co
 
 The current results identify candidate components, but do not yet reconstruct the complete IOI circuit.
 
-The full methodology and analysis, are available in the [project report](report/report.pdf).
-
+The full methodology and analysis, are available in the project report
 ---
 
 ## References
