@@ -103,23 +103,3 @@ The experiments provide evidence that IOI behavior in GPT-2 Small is strongly co
 
 The current results identify candidate components, but do not yet reconstruct the complete IOI circuit.
 
-The full methodology and analysis, are available in the project report
----
-
-## References
-
-* Wang et al., *Interpretability in the Wild: a Circuit for Indirect Object Identification in GPT-2 Small*, 2022.
-* TransformerLens — mechanistic interpretability toolkit.
-* Elhage et al., *A Mathematical Framework for Transformer Circuits*, 2021.
-
-```bibtex
-@article{wang2022ioi,
-  title={Interpretability in the Wild: a Circuit for Indirect Object Identification in GPT-2 Small},
-  author={Wang, Kevin and Variengien, Alexandre and Conmy, Arthur and Shlegeris, Buck and Steinhardt, Jacob},
-  year={2022},
-  url={https://arxiv.org/abs/2211.00593}
-}
-```
-
-```
-```
