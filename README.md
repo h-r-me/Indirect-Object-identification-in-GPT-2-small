@@ -2,7 +2,7 @@
 
 Mechanistic interpretability study of **Indirect Object Identification (IOI)** in GPT-2 Small using **activation patching** and **attention-head ablation**.
 
-The project asks:
+The project tries to find the answer for:
 
 > **Which internal components of GPT-2 Small causally contribute to IOI behavior?**
 
